@@ -1,0 +1,78 @@
+html{
+  background-color: #97CFB4;
+  margin-top: 0px;
+}
+
+.house_logo{
+  background-color: #02572E;
+  display: flex;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 35px;
+}
+
+.logo{
+  margin-left: 300px;
+}
+.house_name{
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.link-wrap{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.links_2{
+  background-color: greenyellow;
+  padding: 5px;
+}
+
+.img_houses{
+  width: 40%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box{
+  background-color: #CBE9DA;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.content{
+  margin-left: 20px;
+  display: flex;
+}
+
+.mortgage{
+  margin-left: 80px;
+}
+
+.deleteHouse{
+  margin-left: 20px;
+  margin-top: 15px; 
+}
+
+.wizard{
+  padding: 60px;
+  background-color: #CBE9DA;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
