@@ -8,14 +8,14 @@ function House(props) {
       <img className="img_houses" src={img} alt='pic' />
       <div className="content">
 
-        <div className="property">
+        <div className="property_con">
           <p>Property Name: {name}</p>
           <p>Address: {address}</p>
           <p>City: {city}</p>
           <p>State: {state}</p>
           <p>Zip: {zip}</p>
         </div>
-          <div className="mortgage">
+          <div className="mortgage_con">
           <p>Monthly Morgage: {mortgage}</p>
           <p>Desired Rent: {rent}</p>
           </div>

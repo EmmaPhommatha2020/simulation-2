@@ -4,7 +4,7 @@ html{
 }
 
 .house_logo{
-  background-color: #02572E;
+  background-color: rgb(11, 109, 62);
   display: flex;
   padding: 10px;
   display: flex;
@@ -30,9 +30,14 @@ html{
   margin-top: 20px;
 }
 
+.link_1{
+  text-decoration: none
+}
+
 .links_2{
-  background-color: greenyellow;
+  background-color: rgb(52, 214, 27);
   padding: 5px;
+  text-decoration: none
 }
 
 .img_houses{
@@ -49,8 +54,8 @@ html{
 
 .box{
   background-color: #CBE9DA;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
   display: flex;
   margin-top: 20px;
 }
@@ -60,8 +65,8 @@ html{
   display: flex;
 }
 
-.mortgage{
-  margin-left: 80px;
+.mortgage_con{
+  margin-left: 100px;
 }
 
 .deleteHouse{
@@ -72,7 +77,7 @@ html{
 .wizard{
   padding: 60px;
   background-color: #CBE9DA;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-top: 20px;
 }

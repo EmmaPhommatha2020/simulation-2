@@ -9,3 +9,5 @@ create table houses(
   mortgage decimal,
   rent decimal
 );
+
+

@@ -1,20 +1,72 @@
-// import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { updateImg } from "../../ducks/reducer.js";
 
+class Wizard_2 extends Component {
+  constructor() {
+    super();
+    this.state = {
+      img: ""
+    };
 
-// function Wizard_2(props) {
-//   const { img, handleChange, addHouse }  = props
-//   console.log("props from wizard_2 --->", props)
-//   return (
-//     <div>
-//           <h4>Image URL</h4>
-//           <input onChange={(e) => handleChange(e)} type="text" name="img" value={img} />
-//           <Link to ="/wizard/step3">
-//           <button className="add" type="submit" onClick={() => addHouse()}>Next</button>
-//          </Link>      
-//     </div>
+    this.handleChange = this.handleChange.bind(this);    
+  }
 
-//   )
-// }
+  componentDidMount() {
+    const { img } = this.props;
+    this.setState({
+      img: img
+    });
+  }
 
-// export default Wizard_2;
+  handleChange(e) {
+    console.log("e--->", e.target.name);
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  }
+
+  render() {
+    const { img } = this.state;
+    return (
+      <div>
+        <h4>Image URL</h4>
+        <input
+          onChange={e => this.handleChange(e)}
+          type="text"
+          name="img"
+          value={img}
+        />
+        <Link to="/wizard/step1">
+          <button
+            className="add"
+            type="submit"
+            onClick={() => this.props.updateImg(img)}
+          >
+            Back
+          </button>
+        </Link>
+
+        <Link to="/wizard/step3">
+          <button
+            className="add"
+            type="submit"
+            onClick={() => this.props.updateImg(img)}
+          >
+            Next
+          </button>
+        </Link>
+      </div>
+    );
+  }
+}
+
+function mapStateToProps(state) {
+  // console.log('STATE TO PROPS WIZ 2--->', state);
+  return {
+    img: state.img
+  };
+}
+
+export default connect(mapStateToProps, { updateImg })(Wizard_2);
