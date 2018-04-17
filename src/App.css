@@ -33,12 +33,17 @@ html{
 
 .links_1{
   text-decoration: none;
+  color:black;
+  font-size: 20px;
 }
 
 .links_2{
   background-color: rgb(52, 214, 27);
   padding: 5px;
   text-decoration: none;
+  border-radius: 10px; 
+  color:black;  
+  font-size: 20px;  
 }
 
 .img_houses{
@@ -94,10 +99,13 @@ html{
 .add{
   margin-left: 10px;
   margin-right: 25px;
+  border-radius: 5px;  
 }
 
 .cancel{
   margin-left: 10%;
+  background: rgb(236, 89, 89);
+  border-radius: 5px;
 }
 
 .step2{
