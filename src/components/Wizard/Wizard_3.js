@@ -92,6 +92,13 @@ class Wizard_3 extends Component {
         >
           Complete
         </button>
+        <button
+          className="cancel"
+          type="submit"
+          onClick={() => this.setState({ mortgage: "", rent:"" })}
+        >
+          Cancel
+        </button>
       </div>
     );
   }

@@ -10,7 +10,7 @@ class Wizard_2 extends Component {
       img: ""
     };
 
-    this.handleChange = this.handleChange.bind(this);    
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -32,7 +32,8 @@ class Wizard_2 extends Component {
     return (
       <div className="img_step2">
         <h4>Image URL</h4>
-        <input className ="step2"
+        <input
+          className="step2"
           onChange={e => this.handleChange(e)}
           type="text"
           name="img"
@@ -57,13 +58,20 @@ class Wizard_2 extends Component {
             Next
           </button>
         </Link>
+        <button
+          className="cancel"
+          type="submit"
+          onClick={() => this.setState({ img: "" })}
+        >
+          Cancel
+        </button>
       </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  console.log('STATE TO PROPS WIZ 2--->', state);
+  console.log("STATE TO PROPS WIZ 2--->", state);
   return {
     img: state.img
   };

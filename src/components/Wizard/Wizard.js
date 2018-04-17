@@ -87,6 +87,21 @@ class Wizard extends Component {
               Next
             </button>
           </Link>
+          <button
+            className="cancel"
+            type="submit"
+            onClick={() =>
+              this.setState({
+                name: "",
+                address: "",
+                city: "",
+                state: "",
+                zip: ""
+              })
+            }
+          >
+            Cancel
+          </button>
         </div>
       </div>
     );
@@ -95,7 +110,7 @@ class Wizard extends Component {
 
 function mapStateToProps(state) {
   const { name, address, city, zip } = state;
-  console.log('IN STATE WIZ 1--->', state)
+  console.log("IN STATE WIZ 1--->", state);
   return { name, address, city, zip, state: state.state };
 }
 

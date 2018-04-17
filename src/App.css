@@ -96,6 +96,10 @@ html{
   margin-right: 25px;
 }
 
+.cancel{
+  margin-left: 10%;
+}
+
 .step2{
   width: 60%;
 }
