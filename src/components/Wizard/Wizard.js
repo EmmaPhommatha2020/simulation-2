@@ -95,7 +95,7 @@ class Wizard extends Component {
 
 function mapStateToProps(state) {
   const { name, address, city, zip } = state;
-  // console.log('IN STATE WIZ 1--->', state)
+  console.log('IN STATE WIZ 1--->', state)
   return { name, address, city, zip, state: state.state };
 }
 

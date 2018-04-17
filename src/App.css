@@ -28,16 +28,17 @@ html{
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  
 }
 
-.link_1{
-  text-decoration: none
+.links_1{
+  text-decoration: none;
 }
 
 .links_2{
   background-color: rgb(52, 214, 27);
   padding: 5px;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .img_houses{
@@ -54,8 +55,8 @@ html{
 
 .box{
   background-color: #CBE9DA;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 220px;
+  margin-right: 220px;
   display: flex;
   margin-top: 20px;
 }
@@ -66,7 +67,7 @@ html{
 }
 
 .mortgage_con{
-  margin-left: 100px;
+  margin-left: 70px;
 }
 
 .deleteHouse{
@@ -80,4 +81,30 @@ html{
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 20px;
+}
+
+.img_step2{
+  padding: 60px;
+  background-color: #CBE9DA;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 80px;
+}
+
+.add{
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+.step2{
+  width: 60%;
+}
+
+.step3{
+  padding: 60px;
+  background-color: #CBE9DA;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 80px;
+  
 }

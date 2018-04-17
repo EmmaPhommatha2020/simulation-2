@@ -57,7 +57,7 @@ class Wizard_3 extends Component {
     const { name, address, city, state, zip, img } = this.props;
     const { mortgage, rent } = this.state;
     return (
-      <div>
+      <div className="step3">
         <h4>Monthly Mortgage Amount</h4>
         <input
           onChange={e => this.handleChange(e)}
@@ -98,10 +98,10 @@ class Wizard_3 extends Component {
 }
 
 function mapStateToProps(state) {
-  // console.log('STATE TO PROPS WIZ 3--->', state);
+  console.log('STATE TO PROPS WIZ 3--->', state);
   
-  const { name, address, city, zip, mortgage, rent } = state;
-  return { name, address, city, state: state.state, zip, mortgage, rent };
+  const { name, address, city, zip, img, mortgage, rent } = state;
+  return { name, address, city, state: state.state, zip, img, mortgage, rent };
 }
 
 export default connect(mapStateToProps, { updateStep3 })(Wizard_3);

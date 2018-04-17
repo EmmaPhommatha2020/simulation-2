@@ -30,9 +30,9 @@ class Wizard_2 extends Component {
   render() {
     const { img } = this.state;
     return (
-      <div>
+      <div className="img_step2">
         <h4>Image URL</h4>
-        <input
+        <input className ="step2"
           onChange={e => this.handleChange(e)}
           type="text"
           name="img"
@@ -63,7 +63,7 @@ class Wizard_2 extends Component {
 }
 
 function mapStateToProps(state) {
-  // console.log('STATE TO PROPS WIZ 2--->', state);
+  console.log('STATE TO PROPS WIZ 2--->', state);
   return {
     img: state.img
   };
